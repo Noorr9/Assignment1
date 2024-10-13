@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SunShine Kindergarten</title>    
+    <title>SunShine Kindergarten</title>  
+    <link rel="shortcut icon" type="x-icon" href="img/sun2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet"  href="styles.css">
 </head>
 <body>
     <!--Header Part-->
  <header>
-    <h1> SunShine Kindergarten</h1>
+  <div class="logo">
+    <img src="https://placehold.co/150x50" alt="logo">
+  </div>
     <!--Navigation Part-->
  <nav>
-         <a href="#schedule">Weekly Schedule</a>
-         <a href="#gallery">Photo Gallery</a>
-         <a href="#resources">Parent Resources</a>
-         <a href="#teacher">About the Teacher</a>
+      <ul class="navlink">
+         <li><a href="#Schedule">Weekly Schedule</a></li>
+         <li><a href="#Gallery">Photo Gallery</a></li>
+         <li><a href="#Resources">Parent Resources</a></li>
+         <li><a href="#Teacher">About the Teacher</a></li>
+        </ul>
  </nav>
+        <a class="cta" href="#contact"><button>Contact</button></a>
  </header>
    <!--Main content areas-->
  <main>
@@ -27,34 +35,34 @@
     <!--Weekly Scheduale-->
     <section id="Schedule">
         <h2>Weekly Schedule</h2>
-        <table bgcolor="black">
+        <table >
             
-           <tr bgcolor="gray">
+           <tr>
              <th>Days</th>
              <th>Focus</th>
              <th>Activites</th>
            </tr>
-           <tr bgcolor="lightgray">
+           <tr>
              <td>Sunday</td>
              <td>Social Skill</td>
              <td>Group Games & Sharing Circle</td>
            </tr>
-           <tr bgcolor="lightgray">
+           <tr>
             <td>Monday</td>
             <td>Problem Solving</td>
             <td>Puzzles & Sorting Activities</td>
           </tr>
-          <tr bgcolor="lightgray">
+          <tr>
             <td>Tuesday</td>
             <td>Creativity & Imagination</td>
             <td>Drawing & StoryTime</td>
           </tr>
-          <tr bgcolor="lightgray">
+          <tr >
             <td>Wednesday</td>
             <td>Physical Coordination</td>
             <td>PlayGroung Time</td>
           </tr>
-          <tr bgcolor="lightgray">
+          <tr>
             <td>Thursday</td>
             <td>Language & Literacy</td>
             <td>Letter Games &  Rhyming Songs</td>
@@ -64,57 +72,65 @@
     <!--PlaceHolder images-->
     <section id="Gallery">
         <h1>Class Activities Gallery</h1>
+        <div class="image-container">
         <img src="https://placehold.co/512" alt="img1">
         <img src="https://placehold.co/512" alt="img2">
         <img src="https://placehold.co/512" alt="img3">
+        </div>
     </section>
     <!--Parent resources or announcements-->
     <section id="Resources">
         <h1>Parent Resources</h1>
-        <h3>Educational Websites & Apps</h3>
+        <h3>Allowable Items for a Lunch Box</h3>
       <ul>
-      <li><a href="https://pbskids.org" target="_blank">PBS Kids</a> - Interactive games and videos to reinforce learning</li>
-      <li><a href="https://www.starfall.com" target="_blank">Starfall</a> - Engaging activities focused on early reading and literacy</li>
+      <li> <i class="fa-solid fa-check"></i>Most contain Any kind of furite and vegetabel </li>
+      <li><i class="fa-solid fa-x"></i>Unhealty food are not Allowed Such as Chips,Candy</li>
       </ul>
-
         <h1>Announcements</h1>
         <h3> Weekly Meetings for Parents</h3>
-        <p>To keep parents informed and involved, we will hold weekly meetings. These meetings will provide updates on classroom activities, discuss upcoming events, and offer opportunities for parents to ask questions or share insights</p>
         <ul>
-            <li>When: Every Monday</li>
-            <li>Time: 7:00 PM - 8:00 PM</li>
-            <li> Where:Sunshine Kindergarten Classroom (or via Zoom for virtual attendance)</li>
+            <li><i class="fa-solid fa-calendar-days"></i>When: Every Monday</li>
+            <li><i class="fa-regular fa-clock"></i>Time: 7:00 PM - 8:00 PM</li>
+            <li> <i class="fa-solid fa-location-dot"></i>Where:Sunshine Kindergarten Classroom (or via Zoom for virtual attendance)</li>
         </ul>
-    </section>
+      </section>
     <!--Teacher information Part-->
     <section id="Teacher">
-        <h1>Teacher Informations</h1>
-        <img src="MalePlaceHolder.jpeg">
-        <h3>Mr. Johnson</h3>
-        <p>Hi, everyone! I’m Mr. Johnson, and I’m excited to be your teacher this year! I love exploring new things, playing soccer, and reading adventure stories. Learning should be fun, and I can’t wait to share exciting activities with you!</p>
-        <img src="FemalePlaceHolder.jpg">
-        <h3>Ms.Shara</h3>
-        <p>Hello, Kids! I’m Ms. Sarah, and I’m looking forward to a fantastic year in kindergarten! I love drawing and painting, and my puppy Buddy loves to play. Every day is a new opportunity to learn and make great memories together!</p>
-        <img src="MalePlaceHolder.jpeg">
-        <h3> Mr. Smith</h3>
-        <p>Hi, everyone! I’m Mr. Mohamed, and I’m thrilled to be your kindergarten teacher! I love singing and dancing, and we’ll have fun with music in our classroom. I believe every child is special, and I can’t wait to help you grow and learn!</p>
-
-    </section>
+      <h1>Teacher Informations</h1>
+      <div class="images-container">
+          <div>
+              <img src="img/MalePlaceHolder.jpeg" alt="Mr. Johnson">
+              <h3>Mr. Johnson</h3>
+              <p>Hi, everyone! I’m Mr. Johnson, and I’m excited to be your teacher this year! I love exploring new things, playing soccer, and reading adventure stories. Learning should be fun, and I can’t wait to share exciting activities with you!</p>
+          </div>
+          <div>
+              <img src="img/FemalePlaceHolder.jpg" alt="Ms. Sarah">
+              <h3>Ms. Shara</h3>
+              <p>Hello, Kids! I’m Ms. Sarah, and I’m looking forward to a fantastic year in kindergarten! I love drawing and painting, and my puppy Buddy loves to play. Every day is a new opportunity to learn and make great memories together!</p>
+          </div>
+          <div>
+              <img src="img/MalePlaceHolder.jpeg" alt="Mr. Mohamed">
+              <h3>Mr. Mohamed</h3>
+              <p>Hi, everyone! I’m Mr. Mohamed, and I’m thrilled to be your kindergarten teacher! I love singing and dancing, and we’ll have fun with music in our classroom. I believe every child is special, and I can’t wait to help you grow and learn!</p>
+          </div>
+      </div>
+  </section>
+  
     </main>
     <!--Footer Part-->
-    <footer>
-            <div>
-            <h3>Contact Us</h3>
-            <p>Email:SunShine@example.com</p>
-            <p>Phone:+973 56556565</p>
-            <p>Address:14758 123 street</p>
-            </div>
-            <div>
-            <h3></h3>
-
-            </div>
-            
-    
+    <footer id="contact">
+      <div class="container">
+        <h3>Follow Us</h3>
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy; SunShine 2025. All rights <span class="reserved">reserved.</span></p>
+    </div>
+           
     </footer>
     
 </body>

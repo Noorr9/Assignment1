@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #1b1d3f;
+    color: #edf0f1;
+}
+li ,a , button{
+    font-family:"Montserrat", sans-serif;
+    font-weight:500 ;
+    font-size: 16px;
+    color:#edf0f1;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    z-index:10000;
+    position:sticky;
+    top: 0;
+    background-color: #13152f;
+}
+
+.navlink li{
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+.navlink a {
+    transition: all 0.3s ease 0s;
+}
+.navlink li a:hover{
+    color:#ffd700;
+}
+button{
+    padding: 9px 25px;
+    background-color: #ffd700;
+    border:none;
+    border-radius:50px ;
+    cursor :pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: #eada80;
+    color : black;
+
+}
+#Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    height: 100vh; 
+}
+
+h1 {
+    font-size: 2.5em; 
+    margin-bottom: 0.5em; 
+}
+
+p {
+    font-size: 1.2em; 
+    max-width: 600px; 
+}
+
+/* Centering the section */
+#Schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; 
+}
+h2{
+    font-size: 34px;
+}
+
+/* Styling the table */
+table {
+    border-collapse: collapse; 
+    width: 80%; 
+    margin-top: 20px; 
+}
+
+/* Styling table headers */
+th {
+    background-color:#ffd700; 
+    color: white; 
+    padding: 10px; 
+    border: none;
+   
+}
+
+/* Styling table cells */
+td {
+    border:none;
+    padding: 8px; 
+    text-align: center; 
+    border: 1px solid #ffd700;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #ffd90032; 
+}
+#Gallery {
+    text-align: center; 
+    font-size:15px;         
+}
+
+.image-container {
+    display: flex;               
+    justify-content: center;     
+    align-items: center;         
+    margin-top: 20px;           
+}
+
+.image-container img {
+    width: 25%;               
+    margin: 10px;               
+    height: auto;               
+    flex-shrink: 0;             
+}
+#Resources {
+    text-align: center;
+}
+
+ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+li {
+    font-size: 18px; 
+    margin: 10px 0; 
+}
+
+.fa-check {
+    color: green; 
+    margin-right: 10px; 
+}
+
+.fa-x {
+    color: red; 
+    margin-right: 10px; 
+}
+.fa-calendar-days{
+    color:aquamarine;
+    margin-right: 10px;
+}
+.fa-clock{
+    color:yellow;
+    margin-right:10px;
+}
+.fa-location-dot{
+    color:red;
+    margin-right: 10px;
+}
+#Teacher {
+    text-align: center; 
+    margin: 20px; 
+}
+
+#Teacher h1 {
+    font-size: 2.5em; 
+    margin-bottom: 20px; 
+}
+
+#Teacher img {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; /* Make the images circular */
+    object-fit: cover; /* Ensure images cover the entire circle */
+    margin: 0 10px; 
+}
+
+#Teacher h3 {
+    margin: 10px 0 5px; 
+    font-size: 1.5em; 
+}
+
+#Teacher p {
+    font-size: 1em;
+    max-width: 300px; 
+    margin: 0 auto 20px; 
+}
+
+/* arrange images and text in a row */
+.images-container {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: nowrap; 
+    overflow-x: auto;
+}
+.fa-facebook{
+    color:#ffd700;
+}
+.fa-youtube{
+   color: #ffd700;
+}
+.fa-instagram{
+    color:#ffd700;
+}
+/* Footer Styling */
+footer {
+    background-color: #1a1a2e; 
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center; 
+}
+
+footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+footer .social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+}
+
+footer .social-icons li {
+    display: inline-block;
+}
+
+footer .social-icons li a {
+    color: #ffb6c1; 
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons li a:hover {
+    color: #ffc0cb; 
+}
+
+footer .bottom-bar {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #ccc; 
+    text-align: center; 
+}
+
+footer .bottom-bar p {
+    margin: 0;
+}
+
+footer .bottom-bar .reserved {
+    color: #ffb6c1; 
+}
+@media (max-width:480px) {
+    .image-container{
+        flex-direction:column;
+        width: 100%;
+        height: auto;
+    }
+    .image-container img{
+        width: 90%;
+    }
+    .images-container{
+        flex-direction: column;
+    }
+    header {
+        flex-direction: column;
+        padding: 5%;
+        align-items: start;
+    }
+    .navlink li{
+        display: flex;
+            padding: 0;
+            flex-direction: column;
+    }
+    .logo
+    {
+        width: 40%;
+    }
+    #Home{
+        height: 50vh;
+    }
+}
